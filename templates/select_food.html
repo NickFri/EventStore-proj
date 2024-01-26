@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Food</title>
+</head>
+<body>
+    <h2>Select Your Food</h2>
+    <form method="post" action="{{ url_for('select_food') }}">
+        <label for="food">Choose a food:</label>
+        <select name="food" id="food">
+            <option value="pizza">Pizza</option>
+            <option value="burger">Burger</option>
+            <option value="sushi">Sushi</option>
+            <!-- Add more food options here -->
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

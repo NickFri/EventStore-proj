@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Drink</title>
+</head>
+<body>
+    <h2>Select Your Drink</h2>
+    <form method="post" action="{{ url_for('select_drink') }}">
+        <label for="drink">Choose a drink:</label>
+        <select name="drink" id="drink">
+            <option value="water">Water</option>
+            <option value="soda">Soda</option>
+            <option value="juice">Juice</option>
+            <!-- Add more drink options here -->
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
